@@ -1,6 +1,6 @@
 # React + Vite Runtime Environment Variables
 
-This project shares one way to implement support for "runtime environment"
+This project shares one way to implement support for "runtime" environment
 variables for a React app.
 
 Here's what you'll find in this `README`:
@@ -26,7 +26,7 @@ This is useful if you have a requirement from DevOps where you'd like
 to build once and deploy many.  For example, I ran into this when we simply 
 wanted to promote from `staging` to `production`.
 
-Given that we could only build once, we need a way to change the
+Given that we could only build once, we needed a way to change the
 configuration of an application at runtime.
 
 ## Technical Design
@@ -41,7 +41,7 @@ Let's walk through the architecture.
 
 The high level approach is:
 
-* JSON File - You have a JSON file that lives on the web serve (in our case this means `public`)
+* JSON File - You have a JSON file that lives on the web server (in our case this means `public`)
 * Runtime hydration - At runtime, while starting up the app, we fetch the file and then set the environment variables in a singleton
 * Usage - Throughout our app, we can now access those environment variables
 
