@@ -1,0 +1,4 @@
+{
+  "VITE_API_URI_ONE": "mock-uri-1",
+  "VITE_API_URI_TWO": "mock-uri-2"
+}
